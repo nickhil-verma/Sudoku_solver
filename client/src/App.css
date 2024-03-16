@@ -1,0 +1,129 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.Sudoku {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F0ECE5;
+  padding: 10px;
+  height: 100vh;
+}
+
+.tile {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 32px;
+  outline: none;
+  background-color: white;
+  border: 2px solid black;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.taken {
+  background-color:rgb(211, 251, 152);
+  color: var(--color2-darker);
+}
+
+.initial {
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 32px;
+  outline: none;
+  background-color: #B6BBC4;
+  border: 2px solid black;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 0fr);
+  padding: 20px;
+}
+
+.interface {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-interface input {
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  outline: none;
+  color: var(--color2-dark);
+  background-color:#31304D;
+  color: white;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.action-interface {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #B6BBC4;
+  padding: 8px 24px;
+  border: 2px solid #161A30;
+  border-radius: 8px;
+  color: var(--color2-dark);
+  font-size: 18px;
+  transition: 0.1s all ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #F0ECE5;
+}
+
+#title{
+  background-color: #161A30;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  position: absolute;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .Sudoku{
+    margin: auto;
+  }
+  .board{
+    /* padding-left: 0; */
+  }
+  button{
+    scale: 0.7;
+     }
+  
+  .action-interface{
+    width: 50%;
+  }
+  .interface{
+    width: 218%;
+  }
+}
