@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       {showTitle ? (
-        <h1 id="title">Sodoku Solver</h1>
+        <h1 id="title">Sudoku Solver</h1>
       ) : (
         <h1 id="title">-Nikhil Verma</h1>
       )}
