@@ -1,16 +1,17 @@
-# Sudoku Solver
+# ENVIROMENT SETUP ON LOCAL DEVICE
 
-This Sudoku Solver can be deployed in a local environment by following these steps:
+# FRONTEND SETUP
+  step 1 : open it in VS code or Terminal
+  step 2 : cd client 
+  step 3 : npm start
+  <img src="https://ibb.co/p2MzT40">
+  Ready to run http://localhost:3000/
+# BACKEND SETUP 
+  step 1 : open a new terminal 
+  step 2 : cd server
+  step 3 : npm run dev
+  <img src="https://ibb.co/hyQRpzD">
+# open it on http://localhost:3000/
+<img src="https://ibb.co/bmwZ363">  
+<img src="https://ibb.co/MnTYycy">  
 
-## Step 1:
-
-open terminal in server folder and run "npm install" and then  "npm run dev"
-
-
-## Step 2:
-open terminal in client folder  "npm install" and then and run "npm run"
-
-## Finally 
-  it will get run on your browser at (http://localhost:3000/)
-
-<a href="https://ibb.co/0qDSwKF"><img src="https://i.ibb.co/2qnQbSs/Screenshot-2024-03-16-125315.png" alt="Screenshot-2024-03-16-125315" border="0"></a>
